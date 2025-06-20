@@ -48,12 +48,12 @@ try:
                     )
                     print(f"\x1b[31m{locale}\x1b[0m", end=" ")
 
-            except Exception as e:
+            except Exception as e:  # pylint: disable=broad-exception-caught
                 print(f"\x1b[31m{locale}\x1b[0m", end=" ")
                 csv_writer.writerow([locale, timezones, f"error: {e}", f"error: {e}"])
 
             # 添加延迟避免请求过快
             time.sleep(0.5)
 
-except Exception as e:
+except Exception as e:  # pylint: disable=broad-exception-caught
     print(e)
