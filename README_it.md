@@ -98,4 +98,4 @@ z.object({
 | `map_url`         | `images[].mapLink.Link`                                                                    | Vedi Nota 2              |
 
 1. `image_url` restituisce per impostazione predefinita un'immagine 4K orizzontale (3840x2160). È possibile ritagliare l'immagine aggiungendo i parametri `&w=<larghezza>&h=<altezza>&rs=1&c=4`, ma fare attenzione a non superare le dimensioni massime dell'immagine.
-2. `map_image` e `map_url` sono attualmente disponibili solo nelle seguenti regioni: `de-DE`, `en-CA`, `en-GB`, `en-IN`, `en-US`, `fr-CA`, `fr-FR`, `it-IT`, `ja-JP`.
+2. `map_image` e `map_url` sono attualmente disponibili solo parzialmente per le immagini nelle seguenti regioni: `de-DE`, `en-CA`, `en-GB`, `en-IN`, `en-US`, `fr-CA`, `fr-FR`, `it-IT`, `ja-JP`.

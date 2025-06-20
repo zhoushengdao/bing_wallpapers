@@ -98,4 +98,4 @@ z.object({
 | `map_url`         | `images[].mapLink.Link`                                                                   | Ver Nota 2                      |
 
 1. `image_url` retorna por padrão uma imagem 4K paisagem (3840x2160). É possível redimensionar adicionando `&w=<largura>&h=<altura>&rs=1&c=4`, mas sem exceder as dimensões máximas.
-2. `map_image` e `map_url` estão disponíveis apenas nestas regiões: `de-DE`, `en-CA`, `en-GB`, `en-IN`, `en-US`, `fr-CA`, `fr-FR`, `it-IT`, `ja-JP`.
+2. `map_image` e `map_url` atualmente estão disponíveis apenas parcialmente para imagens nas seguintes regiões: `de-DE`, `en-CA`, `en-GB`, `en-IN`, `en-US`, `fr-CA`, `fr-FR`, `it-IT`, `ja-JP`.

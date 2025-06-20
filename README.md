@@ -98,4 +98,4 @@ z.object({
 | `map_url`         | `images[].mapLink.Link`                                 | 见注释 2             |
 
 1. `image_url` 默认返回横屏 4K 图片（3840x2160），可以通过附加 `&w=<宽>&h=<高>&rs=1&c=4` 参数来裁剪图片，但要注意不能超过图片的最大尺寸。
-2. `map_image` 和 `map_url` 目前只在以下区域提供：`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`fr-CA`、`fr-FR`、`it-IT`、`ja-JP`。
+2. `map_image` 和 `map_url` 目前只在以下区域的部分图片上提供：`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`fr-CA`、`fr-FR`、`it-IT`、`ja-JP`。

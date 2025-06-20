@@ -98,4 +98,4 @@ z.object({
 | `map_url`         | `images[].mapLink.Link`                                                             | See Note 2                    |
 
 1. `image_url` returns a landscape 4K image (3840x2160) by default. You can crop the image by appending the parameters `&w=<width>&h=<height>&rs=1&c=4`, but be careful not to exceed the image's maximum dimensions.
-2. `map_image` and `map_url` are currently only available in the following regions: `de-DE`, `en-CA`, `en-GB`, `en-IN`, `en-US`, `fr-CA`, `fr-FR`, `it-IT`, `ja-JP`.
+2. `map_image` and `map_url` are currently only partially available for images in the following regions: `de-DE`, `en-CA`, `en-GB`, `en-IN`, `en-US`, `fr-CA`, `fr-FR`, `it-IT`, `ja-JP`.

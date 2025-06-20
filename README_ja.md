@@ -98,4 +98,4 @@ z.object({
 | `map_url`         | `images[].mapLink.Link`                                                             | 注 2 を参照                |
 
 1. `image_url` はデフォルトで横長の 4K 画像（3840x2160）を返します。パラメータ `&w=<幅>&h=<高さ>&rs=1&c=4` を追加することで画像をトリミングできますが、画像の最大サイズを超えないように注意してください。
-2. `map_image` と `map_url` は現在、以下の地域でのみ提供されています：`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`fr-CA`、`fr-FR`、`it-IT`、`ja-JP`。
+2. `map_image` と `map_url` は現在、以下の地域の一部画像でのみ提供されています：`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`fr-CA`、`fr-FR`、`it-IT`、`ja-JP`。

@@ -98,4 +98,4 @@ z.object({
 | `map_url`         | `images[].mapLink.Link`                                                                  | Voir Note 2                       |
 
 1. `image_url` retourne par défaut une image 4K paysage (3840x2160). Vous pouvez recadrer l'image en ajoutant les paramètres `&w=<largeur>&h=<hauteur>&rs=1&c=4`, mais veillez à ne pas dépasser les dimensions maximales de l'image.
-2. `map_image` et `map_url` ne sont actuellement disponibles que dans les régions suivantes: `de-DE`, `en-CA`, `en-GB`, `en-IN`, `en-US`, `fr-CA`, `fr-FR`, `it-IT`, `ja-JP`.
+2. `map_image` et `map_url` ne sont actuellement disponibles que partiellement pour les images dans les régions suivantes: `de-DE`, `en-CA`, `en-GB`, `en-IN`, `en-US`, `fr-CA`, `fr-FR`, `it-IT`, `ja-JP`.

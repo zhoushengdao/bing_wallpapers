@@ -98,4 +98,4 @@ z.object({
 | `map_url`         | `images[].mapLink.Link`                                                                            | Ver Nota 2                      |
 
 1. `image_url` devuelve una imagen 4K apaisada (3840x2160) por defecto. Puedes recortar la imagen añadiendo los parámetros `&w=<ancho>&h=<alto>&rs=1&c=4`, pero ten cuidado de no exceder las dimensiones máximas de la imagen.
-2. `map_image` y `map_url` están disponibles actualmente solo en las siguientes regiones: `de-DE`, `en-CA`, `en-GB`, `en-IN`, `en-US`, `fr-CA`, `fr-FR`, `it-IT`, `ja-JP`.
+2. `map_image` y `map_url` actualmente solo están disponibles parcialmente para imágenes en las siguientes regiones: `de-DE`, `en-CA`, `en-GB`, `en-IN`, `en-US`, `fr-CA`, `fr-FR`, `it-IT`, `ja-JP`.

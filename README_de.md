@@ -98,4 +98,4 @@ z.object({
 | `map_url`         | `images[].mapLink.Link`                                                                         | Siehe Anmerkung 2              |
 
 1. `image_url` liefert standardmäßig ein 4K-Bild (3840x2160) im Querformat. Durch Anhängen der Parameter `&w=<Breite>&h=<Höhe>&rs=1&c=4` kann das Bild zugeschnitten werden, wobei die maximalen Abmessungen des Bildes nicht überschritten werden dürfen.
-2. `map_image` und `map_url` werden derzeit nur in den folgenden Regionen bereitgestellt: `de-DE`, `en-CA`, `en-GB`, `en-IN`, `en-US`, `fr-CA`, `fr-FR`, `it-IT`, `ja-JP`.
+2. `map_image` und `map_url` sind derzeit nur teilweise für Bilder in den folgenden Regionen verfügbar: `de-DE`, `en-CA`, `en-GB`, `en-IN`, `en-US`, `fr-CA`, `fr-FR`, `it-IT`, `ja-JP`.
