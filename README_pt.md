@@ -4,20 +4,20 @@
 
 ## Lista regional
 
-| Código de Região | Fuso Horário                                                                         | Observações                                    |
-| :--------------: | :----------------------------------------------------------------------------------- | :--------------------------------------------- |
-|     `de-DE`      | Horário Padrão: `UTC+1`, Horário de Verão: `UTC+2`，[Fonte](https://time.is/Germany) |                                                |
-|     `en-CA`      | Horário Padrão: `UTC-5`, Horário de Verão: `UTC-4`，[Fonte](https://time.is/Canada)  |                                                |
-|     `en-GB`      | Horário Padrão: `UTC+0`, Horário de Verão: `UTC+1`，[Fonte](https://time.is/England) |                                                |
-|     `en-IN`      | `UTC+5:30`，[Fonte](https://time.is/India)                                           | `hi-IN` é quase idêntico e também é descartado |
-|     `en-US`      | Horário Padrão: `UTC-8`, Horário de Verão: `UTC-7`，[Fonte](https://time.is/Redmond) |                                                |
-|     `es-ES`      | Horário Padrão: `UTC+1`, Horário de Verão: `UTC+2`，[Fonte](https://time.is/Spain)   |                                                |
-|     `fr-CA`      | Horário Padrão: `UTC-5`, Horário de Verão: `UTC-4`，[Fonte](https://time.is/Canada)  |                                                |
-|     `fr-FR`      | Horário Padrão: `UTC+1`, Horário de Verão: `UTC+2`，[Fonte](https://time.is/France)  |                                                |
-|     `it-IT`      | Horário Padrão: `UTC+1`, Horário de Verão: `UTC+2`，[Fonte](https://time.is/Italy)   |                                                |
-|     `ja-JP`      | `UTC+9`，[Fonte](https://time.is/Japan)                                              |                                                |
-|     `pt-BR`      | `UTC-3`，[Fonte](https://time.is/Brazil)                                             |                                                |
-|     `zh-CN`      | `UTC+8`，[Fonte](https://time.is/China)                                              |                                                |
+| Código de Região | Fuso Horário                                     | Observações                                    |
+| :--------------: | :----------------------------------------------- | :--------------------------------------------- |
+|     `de-DE`      | [`Europe/Berlin`](https://time.is/Germany)       |                                                |
+|     `en-CA`      | [`America/Toronto`](https://time.is/Canada)      |                                                |
+|     `en-GB`      | [`Europe/London`](https://time.is/England)       |                                                |
+|     `en-IN`      | [`Asia/Kolkata`](https://time.is/India)          | `hi-IN` é quase idêntico e também é descartado |
+|     `en-US`      | [`America/Los_Angeles`](https://time.is/Redmond) |                                                |
+|     `es-ES`      | [`Europe/Madrid`](https://time.is/Spain)         |                                                |
+|     `fr-CA`      | [`America/Toronto`](https://time.is/Canada)      |                                                |
+|     `fr-FR`      | [`Europe/Paris`](https://time.is/France)         |                                                |
+|     `it-IT`      | [`Europe/Rome`](https://time.is/Italy)           |                                                |
+|     `ja-JP`      | [`Asia/Tokyo`](https://time.is/Japan)            |                                                |
+|     `pt-BR`      | [`America/Sao_Paulo`](https://time.is/Brazil)    |                                                |
+|     `zh-CN`      | [`Asia/Shanghai`](https://time.is/China)         |                                                |
 
 Ver detalhes em [regional_list.csv](regional_list.csv)
 

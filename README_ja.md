@@ -4,20 +4,20 @@
 
 ## リージョンリスト
 
-| リージョンコード | タイムゾーン                                                      | 備考                                               |
-| :--------------: | :---------------------------------------------------------------- | :------------------------------------------------- |
-|     `de-DE`      | 標準時：`UTC+1`，夏時間：`UTC+2`，[出典](https://time.is/Germany) |                                                    |
-|     `en-CA`      | 標準時：`UTC-5`，夏時間：`UTC-4`，[出典](https://time.is/Canada)  |                                                    |
-|     `en-GB`      | 標準時：`UTC+0`，夏時間：`UTC+1`，[出典](https://time.is/England) |                                                    |
-|     `en-IN`      | `UTC+5:30`，[出典](https://time.is/India)                         | `hi-IN` はこれとほぼ同じであり、同様に除外されます |
-|     `en-US`      | 標準時：`UTC-8`，夏時間：`UTC-7`，[出典](https://time.is/Redmond) |                                                    |
-|     `es-ES`      | 標準時：`UTC+1`，夏時間：`UTC+2`，[出典](https://time.is/Spain)   |                                                    |
-|     `fr-CA`      | 標準時：`UTC-5`，夏時間：`UTC-4`，[出典](https://time.is/Canada)  |                                                    |
-|     `fr-FR`      | 標準時：`UTC+1`，夏時間：`UTC+2`，[出典](https://time.is/France)  |                                                    |
-|     `it-IT`      | 標準時：`UTC+1`，夏時間：`UTC+2`，[出典](https://time.is/Italy)   |                                                    |
-|     `ja-JP`      | `UTC+9`，[出典](https://time.is/Japan)                            |                                                    |
-|     `pt-BR`      | `UTC-3`，[出典](https://time.is/Brazil)                           |                                                    |
-|     `zh-CN`      | `UTC+8`，[出典](https://time.is/China)                            |                                                    |
+| リージョンコード | タイムゾーン                                     | 備考                                               |
+| :--------------: | :----------------------------------------------- | :------------------------------------------------- |
+|     `de-DE`      | [`Europe/Berlin`](https://time.is/Germany)       |                                                    |
+|     `en-CA`      | [`America/Toronto`](https://time.is/Canada)      |                                                    |
+|     `en-GB`      | [`Europe/London`](https://time.is/England)       |                                                    |
+|     `en-IN`      | [`Asia/Kolkata`](https://time.is/India)          | `hi-IN` はこれとほぼ同じであり、同様に除外されます |
+|     `en-US`      | [`America/Los_Angeles`](https://time.is/Redmond) |                                                    |
+|     `es-ES`      | [`Europe/Madrid`](https://time.is/Spain)         |                                                    |
+|     `fr-CA`      | [`America/Toronto`](https://time.is/Canada)      |                                                    |
+|     `fr-FR`      | [`Europe/Paris`](https://time.is/France)         |                                                    |
+|     `it-IT`      | [`Europe/Rome`](https://time.is/Italy)           |                                                    |
+|     `ja-JP`      | [`Asia/Tokyo`](https://time.is/Japan)            |                                                    |
+|     `pt-BR`      | [`America/Sao_Paulo`](https://time.is/Brazil)    |                                                    |
+|     `zh-CN`      | [`Asia/Shanghai`](https://time.is/China)         |                                                    |
 
 詳細は [regional_list.csv](regional_list.csv) をご覧ください
 

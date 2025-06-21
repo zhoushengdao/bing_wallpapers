@@ -4,20 +4,20 @@
 
 ## Regionen liste
 
-| Regionencode | Zeitzone                                                                    | Bemerkung                                                 |
-| :----------: | :-------------------------------------------------------------------------- | :-------------------------------------------------------- |
-|   `de-DE`    | Winterzeit: `UTC+1`, Sommerzeit: `UTC+2`, [Quelle](https://time.is/Germany) |                                                           |
-|   `en-CA`    | Winterzeit: `UTC-5`, Sommerzeit: `UTC-4`, [Quelle](https://time.is/Canada)  |                                                           |
-|   `en-GB`    | Winterzeit: `UTC+0`, Sommerzeit: `UTC+1`, [Quelle](https://time.is/England) |                                                           |
-|   `en-IN`    | `UTC+5:30`, [Quelle](https://time.is/India)                                 | `hi-IN` ist fast identisch und wird ebenfalls weggelassen |
-|   `en-US`    | Winterzeit: `UTC-8`, Sommerzeit: `UTC-7`, [Quelle](https://time.is/Redmond) |                                                           |
-|   `es-ES`    | Winterzeit: `UTC+1`, Sommerzeit: `UTC+2`, [Quelle](https://time.is/Spain)   |                                                           |
-|   `fr-CA`    | Winterzeit: `UTC-5`, Sommerzeit: `UTC-4`, [Quelle](https://time.is/Canada)  |                                                           |
-|   `fr-FR`    | Winterzeit: `UTC+1`, Sommerzeit: `UTC+2`, [Quelle](https://time.is/France)  |                                                           |
-|   `it-IT`    | Winterzeit: `UTC+1`, Sommerzeit: `UTC+2`, [Quelle](https://time.is/Italy)   |                                                           |
-|   `ja-JP`    | `UTC+9`, [Quelle](https://time.is/Japan)                                    |                                                           |
-|   `pt-BR`    | `UTC-3`, [Quelle](https://time.is/Brazil)                                   |                                                           |
-|   `zh-CN`    | `UTC+8`, [Quelle](https://time.is/China)                                    |                                                           |
+| Regionencode | Zeitzone                                         | Bemerkung                                                 |
+| :----------: | :----------------------------------------------- | :-------------------------------------------------------- |
+|   `de-DE`    | [`Europe/Berlin`](https://time.is/Germany)       |                                                           |
+|   `en-CA`    | [`America/Toronto`](https://time.is/Canada)      |                                                           |
+|   `en-GB`    | [`Europe/London`](https://time.is/England)       |                                                           |
+|   `en-IN`    | [`Asia/Kolkata`](https://time.is/India)          | `hi-IN` ist fast identisch und wird ebenfalls weggelassen |
+|   `en-US`    | [`America/Los_Angeles`](https://time.is/Redmond) |                                                           |
+|   `es-ES`    | [`Europe/Madrid`](https://time.is/Spain)         |                                                           |
+|   `fr-CA`    | [`America/Toronto`](https://time.is/Canada)      |                                                           |
+|   `fr-FR`    | [`Europe/Paris`](https://time.is/France)         |                                                           |
+|   `it-IT`    | [`Europe/Rome`](https://time.is/Italy)           |                                                           |
+|   `ja-JP`    | [`Asia/Tokyo`](https://time.is/Japan)            |                                                           |
+|   `pt-BR`    | [`America/Sao_Paulo`](https://time.is/Brazil)    |                                                           |
+|   `zh-CN`    | [`Asia/Shanghai`](https://time.is/China)         |                                                           |
 
 Details siehe [regional_list.csv](regional_list.csv)
 

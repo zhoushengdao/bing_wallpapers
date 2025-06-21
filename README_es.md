@@ -4,20 +4,20 @@
 
 ## Lista regional
 
-| Código de Región | Zona Horaria                                                                                | Observaciones                                  |
-| :--------------: | :------------------------------------------------------------------------------------------ | :--------------------------------------------- |
-|     `de-DE`      | Horario de Invierno: `UTC+1`, Horario de Verano: `UTC+2`, [Fuente](https://time.is/Germany) |                                                |
-|     `en-CA`      | Horario de Invierno: `UTC-5`, Horario de Verano: `UTC-4`, [Fuente](https://time.is/Canada)  |                                                |
-|     `en-GB`      | Horario de Invierno: `UTC+0`, Horario de Verano: `UTC+1`, [Fuente](https://time.is/England) |                                                |
-|     `en-IN`      | `UTC+5:30`, [Fuente](https://time.is/India)                                                 | `hi-IN` es casi idéntico y también se descarta |
-|     `en-US`      | Horario de Invierno: `UTC-8`, Horario de Verano: `UTC-7`, [Fuente](https://time.is/Redmond) |                                                |
-|     `es-ES`      | Horario de Invierno: `UTC+1`, Horario de Verano: `UTC+2`, [Fuente](https://time.is/Spain)   |                                                |
-|     `fr-CA`      | Horario de Invierno: `UTC-5`, Horario de Verano: `UTC-4`, [Fuente](https://time.is/Canada)  |                                                |
-|     `fr-FR`      | Horario de Invierno: `UTC+1`, Horario de Verano: `UTC+2`, [Fuente](https://time.is/France)  |                                                |
-|     `it-IT`      | Horario de Invierno: `UTC+1`, Horario de Verano: `UTC+2`, [Fuente](https://time.is/Italy)   |                                                |
-|     `ja-JP`      | `UTC+9`, [Fuente](https://time.is/Japan)                                                    |                                                |
-|     `pt-BR`      | `UTC-3`, [Fuente](https://time.is/Brazil)                                                   |                                                |
-|     `zh-CN`      | `UTC+8`, [Fuente](https://time.is/China)                                                    |                                                |
+| Código de Región | Zona Horaria                                     | Observaciones                                  |
+| :--------------: | :----------------------------------------------- | :--------------------------------------------- |
+|     `de-DE`      | [`Europe/Berlin`](https://time.is/Germany)       |                                                |
+|     `en-CA`      | [`America/Toronto`](https://time.is/Canada)      |                                                |
+|     `en-GB`      | [`Europe/London`](https://time.is/England)       |                                                |
+|     `en-IN`      | [`Asia/Kolkata`](https://time.is/India)          | `hi-IN` es casi idéntico y también se descarta |
+|     `en-US`      | [`America/Los_Angeles`](https://time.is/Redmond) |                                                |
+|     `es-ES`      | [`Europe/Madrid`](https://time.is/Spain)         |                                                |
+|     `fr-CA`      | [`America/Toronto`](https://time.is/Canada)      |                                                |
+|     `fr-FR`      | [`Europe/Paris`](https://time.is/France)         |                                                |
+|     `it-IT`      | [`Europe/Rome`](https://time.is/Italy)           |                                                |
+|     `ja-JP`      | [`Asia/Tokyo`](https://time.is/Japan)            |                                                |
+|     `pt-BR`      | [`America/Sao_Paulo`](https://time.is/Brazil)    |                                                |
+|     `zh-CN`      | [`Asia/Shanghai`](https://time.is/China)         |                                                |
 
 Ver detalles en [regional_list.csv](regional_list.csv)
 

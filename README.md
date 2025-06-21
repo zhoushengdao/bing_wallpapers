@@ -4,20 +4,20 @@
 
 ## 区域列表
 
-| 区域代码 | 时区                                                              | 备注                             |
-| :------: | :---------------------------------------------------------------- | :------------------------------- |
-| `de-DE`  | 冬令时：`UTC+1`，夏令时：`UTC+2`，[来源](https://time.is/Germany) |                                  |
-| `en-CA`  | 冬令时：`UTC-5`，夏令时：`UTC-4`，[来源](https://time.is/Canada)  |                                  |
-| `en-GB`  | 冬令时：`UTC+0`，夏令时：`UTC+1`，[来源](https://time.is/England) |                                  |
-| `en-IN`  | `UTC+5:30`，[来源](https://time.is/India)                         | `hi-IN` 与其几乎完全一样，也舍弃 |
-| `en-US`  | 冬令时：`UTC-8`，夏令时：`UTC-7`，[来源](https://time.is/Redmond) |                                  |
-| `es-ES`  | 冬令时：`UTC+1`，夏令时：`UTC+2`，[来源](https://time.is/Spain)   |                                  |
-| `fr-CA`  | 冬令时：`UTC-5`，夏令时：`UTC-4`，[来源](https://time.is/Canada)  |                                  |
-| `fr-FR`  | 冬令时：`UTC+1`，夏令时：`UTC+2`，[来源](https://time.is/France)  |                                  |
-| `it-IT`  | 冬令时：`UTC+1`，夏令时：`UTC+2`，[来源](https://time.is/Italy)   |                                  |
-| `ja-JP`  | `UTC+9`，[来源](https://time.is/Japan)                            |                                  |
-| `pt-BR`  | `UTC-3`，[来源](https://time.is/Brazil)                           |                                  |
-| `zh-CN`  | `UTC+8`，[来源](https://time.is/China)                            |                                  |
+| 区域代码 | 时区                                             | 备注                             |
+| :------: | :----------------------------------------------- | :------------------------------- |
+| `de-DE`  | [`Europe/Berlin`](https://time.is/Germany)       |                                  |
+| `en-CA`  | [`America/Toronto`](https://time.is/Canada)      |                                  |
+| `en-GB`  | [`Europe/London`](https://time.is/England)       |                                  |
+| `en-IN`  | [`Asia/Kolkata`](https://time.is/India)          | `hi-IN` 与其几乎完全一样，也舍弃 |
+| `en-US`  | [`America/Los_Angeles`](https://time.is/Redmond) |                                  |
+| `es-ES`  | [`Europe/Madrid`](https://time.is/Spain)         |                                  |
+| `fr-CA`  | [`America/Toronto`](https://time.is/Canada)      |                                  |
+| `fr-FR`  | [`Europe/Paris`](https://time.is/France)         |                                  |
+| `it-IT`  | [`Europe/Rome`](https://time.is/Italy)           |                                  |
+| `ja-JP`  | [`Asia/Tokyo`](https://time.is/Japan)            |                                  |
+| `pt-BR`  | [`America/Sao_Paulo`](https://time.is/Brazil)    |                                  |
+| `zh-CN`  | [`Asia/Shanghai`](https://time.is/China)         |                                  |
 
 详细可见 [regional_list.csv](regional_list.csv)
 

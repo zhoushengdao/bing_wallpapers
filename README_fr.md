@@ -4,20 +4,20 @@
 
 ## Liste régionale
 
-| Code Région | Fuseau Horaire                                                                  | Remarque                                                 |
-| :---------: | :------------------------------------------------------------------------------ | :------------------------------------------------------- |
-|   `de-DE`   | Heure d'Hiver: `UTC+1`, Heure d'Été: `UTC+2`, [Source](https://time.is/Germany) |                                                          |
-|   `en-CA`   | Heure d'Hiver: `UTC-5`, Heure d'Été: `UTC-4`, [Source](https://time.is/Canada)  |                                                          |
-|   `en-GB`   | Heure d'Hiver: `UTC+0`, Heure d'Été: `UTC+1`, [Source](https://time.is/England) |                                                          |
-|   `en-IN`   | `UTC+5:30`, [Source](https://time.is/India)                                     | `hi-IN` est presque identique et est également abandonné |
-|   `en-US`   | Heure d'Hiver: `UTC-8`, Heure d'Été: `UTC-7`, [Source](https://time.is/Redmond) |                                                          |
-|   `es-ES`   | Heure d'Hiver: `UTC+1`, Heure d'Été: `UTC+2`, [Source](https://time.is/Spain)   |                                                          |
-|   `fr-CA`   | Heure d'Hiver: `UTC-5`, Heure d'Été: `UTC-4`, [Source](https://time.is/Canada)  |                                                          |
-|   `fr-FR`   | Heure d'Hiver: `UTC+1`, Heure d'Été: `UTC+2`, [Source](https://time.is/France)  |                                                          |
-|   `it-IT`   | Heure d'Hiver: `UTC+1`, Heure d'Été: `UTC+2`, [Source](https://time.is/Italy)   |                                                          |
-|   `ja-JP`   | `UTC+9`, [Source](https://time.is/Japan)                                        |                                                          |
-|   `pt-BR`   | `UTC-3`, [Source](https://time.is/Brazil)                                       |                                                          |
-|   `zh-CN`   | `UTC+8`, [Source](https://time.is/China)                                        |                                                          |
+| Code Région | Fuseau Horaire                                   | Remarque                                                 |
+| :---------: | :----------------------------------------------- | :------------------------------------------------------- |
+|   `de-DE`   | [`Europe/Berlin`](https://time.is/Germany)       |                                                          |
+|   `en-CA`   | [`America/Toronto`](https://time.is/Canada)      |                                                          |
+|   `en-GB`   | [`Europe/London`](https://time.is/England)       |                                                          |
+|   `en-IN`   | [`Asia/Kolkata`](https://time.is/India)          | `hi-IN` est presque identique et est également abandonné |
+|   `en-US`   | [`America/Los_Angeles`](https://time.is/Redmond) |                                                          |
+|   `es-ES`   | [`Europe/Madrid`](https://time.is/Spain)         |                                                          |
+|   `fr-CA`   | [`America/Toronto`](https://time.is/Canada)      |                                                          |
+|   `fr-FR`   | [`Europe/Paris`](https://time.is/France)         |                                                          |
+|   `it-IT`   | [`Europe/Rome`](https://time.is/Italy)           |                                                          |
+|   `ja-JP`   | [`Asia/Tokyo`](https://time.is/Japan)            |                                                          |
+|   `pt-BR`   | [`America/Sao_Paulo`](https://time.is/Brazil)    |                                                          |
+|   `zh-CN`   | [`Asia/Shanghai`](https://time.is/China)         |                                                          |
 
 Voir les détails dans [regional_list.csv](regional_list.csv)
 
