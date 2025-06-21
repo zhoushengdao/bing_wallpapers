@@ -6,12 +6,18 @@
 #
 --index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
+attrs==25.3.0
+    # via jsonlines
 certifi==2025.6.15
     # via requests
 charset-normalizer==3.4.2
     # via requests
 idna==3.10
     # via requests
+jsonlines==4.0.0
+    # via -r requirements.in
+pytz==2025.2
+    # via -r requirements.in
 requests==2.32.4
     # via -r requirements.in
 urllib3==2.5.0
