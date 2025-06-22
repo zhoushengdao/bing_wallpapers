@@ -1,5 +1,7 @@
 # Fondos de pantalla de Bing
 
+[![Update Bing Wallpaper](https://github.com/zhoushengdao/bing_wallpaper/actions/workflows/update.yaml/badge.svg?event=schedule)](https://github.com/zhoushengdao/bing_wallpaper/actions/workflows/update.yaml)
+
 [[🇩🇪 Deutsch Alemán](README_de.md)] [[🇨🇦 🇬🇧 🇮🇳 🇺🇸 English Inglés](README_en.md)] [[🇨🇦 🇫🇷 Français Francés](README_fr.md)] [[🇮🇹 Italiano Italiano](README_it.md)] [[🇯🇵 日本語 Japonés](README_ja.md)] [[🇧🇷 Português Portugués](README_pt.md)] [[🇨🇳 中文 Chino](README.md)]
 
 ## Lista regional

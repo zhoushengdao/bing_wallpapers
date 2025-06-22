@@ -1,5 +1,7 @@
 # Bing 壁紙
 
+[![Update Bing Wallpaper](https://github.com/zhoushengdao/bing_wallpaper/actions/workflows/update.yaml/badge.svg?event=schedule)](https://github.com/zhoushengdao/bing_wallpaper/actions/workflows/update.yaml)
+
 [[🇩🇪 Deutsch ドイツ語](README_de.md)] [[🇨🇦 🇬🇧 🇮🇳 🇺🇸 English 英語](README_en.md)] [[🇪🇸 Español スペイン語](README_es.md)] [[🇨🇦 🇫🇷 Français フランス語](README_fr.md)] [[🇮🇹 Italiano イタリア語](README_it.md)] [[🇧🇷 Português ポルトガル語](README_pt.md)] [[🇨🇳 中文 中国語](README.md)]
 
 ## リージョンリスト

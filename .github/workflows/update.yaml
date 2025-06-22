@@ -46,17 +46,27 @@ jobs:
           name: bing_wallpapers_log
           path: log.log
 
-      - run: rm -rf archive/
+      - run: |
+          echo "# 自动更新 $(date +'%Y-%m-%d %H:%M:%S')" > issue_body.md
+          echo '```' >> issue_body.md
+          cat log.log >> issue_body.md
+          echo '```' >> issue_body.md
 
       - uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: 1
-          body-path: log.log
+          body-path: issue_body.md
+
+      - name: Check for changes
+        id: check_changes
+        run: echo "changes_exist=$(git status --porcelain | wc -l)" >> $GITHUB_OUTPUT
 
       - name: Commit files
+        if: steps.check_changes.outputs.changes_exist != '0'
         run: git commit -a -m "自动更新 $(date +'%Y-%m-%d %H:%M:%S')"
 
       - name: Push changes
+        if: steps.check_changes.outputs.changes_exist != '0'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
