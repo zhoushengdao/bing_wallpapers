@@ -41,8 +41,8 @@ LOCALES = OrderedDict(
     ]
 )
 
-DATA_DIR = Path.cwd() / "data"
-ARCHIVE_DIR = Path.cwd() / "archive"
+DATA_DIR = Path(__file__).parent / "data"
+ARCHIVE_DIR = Path(__file__).parent / "archive"
 ARCHIVE_DIR.mkdir(exist_ok=True)
 
 persisted_error_log = []
