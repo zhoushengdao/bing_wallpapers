@@ -45,6 +45,20 @@ DATA_DIR = Path.cwd() / "data"
 ARCHIVE_DIR = Path.cwd() / "archive"
 ARCHIVE_DIR.mkdir(exist_ok=True)
 
+persisted_error_log = []
+
+
+def add_persisted_error(locale, date, error):
+    """添加持久化错误日志"""
+    persisted_error_log.append(
+        {
+            "locale": locale,
+            "date": date,
+            "type": type(error).__name__,
+            "message": str(error),
+        }
+    )
+
 
 def valid_data(data):
     """检查数据是否有效"""
@@ -99,13 +113,16 @@ def is_different(origin_data, current_data):
     return False
 
 
+def process_utc_time(locale, time):
+    """处理 UTC 时间"""
+    utc_time = utc.localize(datetime.strptime(time, "%Y%m%d%H%M"))
+    return (utc_time.astimezone(tz(LOCALES[locale])).strftime("%Y-%m-%d"), utc_time)
+
+
 def get_image_data(locale, data):
     """将原始数据格式转换为目标格式"""
 
-    utc_time = utc.localize(
-        datetime.strptime(data.get("fullstartdate", ""), "%Y%m%d%H%M")
-    )
-    date = utc_time.astimezone(tz(LOCALES[locale])).strftime("%Y-%m-%d")
+    date, utc_time = process_utc_time(locale, data["fullstartdate"])
     map_link_obj = data.get("mapLink", {})
     if not isinstance(map_link_obj, dict):
         logger.info("[%s] image_data=%s", locale, dumps(data, indent=2))
@@ -126,7 +143,7 @@ def get_image_data(locale, data):
         "map_url": map_link_obj.get("Link", ""),
     }
 
-    return (date, result)
+    return result
 
 
 def get_data_file_path(locale, backup=False) -> Path:
@@ -144,7 +161,7 @@ def get_locale(locale):
     backup_file_path = get_data_file_path(locale, backup=True)
 
     res = get(f"{API_BASE}{locale}", timeout=60)
-    logger.info("[%s] 开始获取区域数据，API 返回状态码 %s", locale, res.status_code)
+    logger.info("[%s] 开始，状态码 %s", locale, res.status_code)
     data = res.json()
     if "images" not in data:
         logger.info("[%s] data=%s", locale, dumps(data, indent=2))
@@ -160,16 +177,29 @@ def get_locale(locale):
             logger.info("[%s] image_data=%s", locale, dumps(image, indent=2))
             logger.error("[%s] API 返回的 images 数据元素不是字典", locale)
 
+        if (
+            ("fullstartdate" not in image)
+            or (not isinstance(image["fullstartdate"], str))
+            or (not image["fullstartdate"])
+        ):
+            logger.info("[%s] image_data=%s", locale, dumps(image, indent=2))
+            logger.error("[%s] API 返回的 image 数据中缺少 fullstartdate 字段", locale)
+            continue
+
         try:
-            date, image_data = get_image_data(locale, image)
+            date, _ = process_utc_time(locale, image["fullstartdate"])
         except ValueError as error:
+            add_persisted_error(locale, image["fullstartdate"], error)
             logger.info("[%s] image_data=%s", locale, dumps(image, indent=2))
             logger.error("[%s] %s %s", locale, type(error).__name__, error)
             continue
 
+        image_data = get_image_data(locale, image)
+
         try:
             valid_data(image_data)
         except (ValueError, KeyError) as error:
+            add_persisted_error(locale, date, error)
             logger.info("[%s] image_data=%s", locale, dumps(image_data, indent=2))
             logger.error("[%s] %s %s", locale, type(error).__name__, error)
         else:
@@ -201,7 +231,7 @@ def get_locale(locale):
                         locale,
                         dumps(images_data[item_date], indent=2),
                     )
-                    logger.info("[%s] %s 的数据已更新", locale, item_date)
+                    logger.info("[%s] 更新数据 %s", locale, item_date)
                     updated_items += 1
                 else:
                     unchanged_items += 1
@@ -214,12 +244,12 @@ def get_locale(locale):
                     locale,
                     dumps(item_data, indent=2),
                 )
-                logger.info("[%s] %s 的数据已新增", locale, item_date)
+                logger.info("[%s] 新增数据 %s", locale, item_date)
                 appended_items += 1
                 file.write(item_data)
 
     logger.info(
-        "[%s] 区域数据处理完成，%s 个数据已保留，%s 个数据已更新，%s 个数据已新增，现共有 %s 个数据",
+        "[%s] 完成，保留 %s，更新 %s，新增 %s，总计 %s",
         locale,
         unchanged_items,
         updated_items,
@@ -238,6 +268,9 @@ def main():
             get_locale(locale)
         except (ValueError, RequestException) as error:
             logger.error("[%s] %s %s", locale, type(error).__name__, error)
+
+    with jsonl_open(DATA_DIR / "error_log.jsonl", mode="a") as writer:
+        writer.write_all(persisted_error_log)
 
 
 if __name__ == "__main__":
