@@ -34,5 +34,5 @@ jobs:
         with:
           issue-number: 3
           body-path: issue_body.md
-          comment-id: 3166053767
+          comment-id: 2994281397
           edit-mode: replace
