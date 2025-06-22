@@ -56,6 +56,7 @@ def add_persisted_error(locale, date, error):
             "date": date,
             "type": type(error).__name__,
             "message": str(error),
+            "created": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         }
     )
 
@@ -67,32 +68,32 @@ def valid_data(data):
         r"EN-IN|EN-US|ES-ES|FR-CA|FR-FR|IT-IT|JA-JP|PT-BR|ZH-CN)(\d+)_UHD\.jpg$",
         data["image_url"],
     ):
-        raise ValueError("image_url 格式不正确")
+        raise ValueError(f"image_url 格式不正确：{data["image_url"]}")
 
     if not data["copyright"].startswith("© "):
-        raise ValueError("copyright 格式不正确")
+        raise ValueError(f"copyright 格式不正确：{data["copyright"]}")
 
     if not match(
         r"^https://www\.bing\.com/search\?q=([^&]+)&form="
         r"BGALM(?:&filters=HpDate:\"(\d{8}_\d{4})\")$",
         data["search_url"],
     ):
-        raise ValueError("search_url 格式不正确")
+        raise ValueError(f"search_url 格式不正确：{data["search_url"]}")
 
     if not match(
         r"^https://www\.bing\.com/search\?q=Bing\+homepage\+quiz"
         r"&filters=WQOskey:\"HPQuiz_(\d{8})_([^\"]+)\"&FORM=BGAQ$",
         data["quiz_url"],
     ):
-        raise ValueError("quiz_url 格式不正确")
+        raise ValueError(f"quiz_url 格式不正确：{data["quiz_url"]}")
 
     if data["map_image"] and not data["map_image"].startswith(
         "https://platform.bing.com/geo/REST/v1/Imagery/Map/RoadVibrant/"
     ):
-        raise ValueError("map_image 格式不正确")
+        raise ValueError(f"map_image 格式不正确：{data["map_image"]}")
 
     if data["map_url"] and not data["map_url"].startswith("https://www.bing.com/maps?"):
-        raise ValueError("map_url 格式不正确")
+        raise ValueError(f"map_url 格式不正确：{data["map_url"]}")
 
 
 def is_different(origin_data, current_data):
