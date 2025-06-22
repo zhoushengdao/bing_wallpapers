@@ -38,13 +38,13 @@ z.object({
         .string()
         .regex(
           /^https:\/\/www\.bing\.com\/th\?id=OHR\.([A-Za-z0-9]+)_(DE-DE|EN-CA|EN-GB|EN-IN|EN-US|ES-ES|FR-CA|FR-FR|IT-IT|JA-JP|PT-BR|ZH-CN)(\d+)_UHD\.jpg$/
-        ), // Bekannt, dass für die Region en-GB Daten existieren, die nicht diesem Schema entsprechen
+        ), // Es ist bekannt, dass in einigen Regionen Daten vorhanden sind, die nicht dem Muster entsprechen
       copyrighttext: z.string().startsWith("© "),
       copyrightlink: z
         .string()
         .regex(
           /^https:\/\/www\.bing\.com\/search\?q=([^&]+)&form=BGALM(?:&filters=HpDate:"(\d{8}_\d{4})")$/
-        ), // Bekannt, dass für die Region en-GB Daten existieren, die nicht diesem Schema entsprechen
+        ), // Es ist bekannt, dass in einigen Regionen Daten vorhanden sind, die nicht dem Muster entsprechen
       title: z.string(),
       description: z.string(),
       headline: z.string(),
@@ -52,7 +52,7 @@ z.object({
         .string()
         .regex(
           /^https:\/\/www\.bing\.com\/search\?q=Bing\+homepage\+quiz&filters=WQOskey:"HPQuiz_(\d{8})_([^"]+)"&FORM=BGAQ$/
-        ), // Bekannt, dass für die Region en-GB Daten existieren, die nicht diesem Schema entsprechen
+        ), // Es ist bekannt, dass in einigen Regionen Daten vorhanden sind, die nicht dem Muster entsprechen
       mapLink: z.object({
         Url: z
           .string()

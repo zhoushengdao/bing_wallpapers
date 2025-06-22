@@ -28,8 +28,8 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config --local user.email "actions@users.noreply.github.com"
-          git config --local user.name "GitHub Actions"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "gitHub-actions[bot]"
 
       - run: mkdir -p archive/
 
@@ -38,7 +38,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: Bing Wallpaper Data Auto Backup
+          name: bing_wallpapers_data_auto_backup
           path: archive/
 
       - run: rm -rf archive/

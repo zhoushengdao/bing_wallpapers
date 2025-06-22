@@ -38,13 +38,13 @@ z.object({
         .string()
         .regex(
           /^https:\/\/www\.bing\.com\/th\?id=OHR\.([A-Za-z0-9]+)_(DE-DE|EN-CA|EN-GB|EN-IN|EN-US|ES-ES|FR-CA|FR-FR|IT-IT|JA-JP|PT-BR|ZH-CN)(\d+)_UHD\.jpg$/
-        ), // en-GB ロケールにこのスキーマに適合しないデータが存在することが知られています
+        ), // 一部の地域では、このパターンにマッチしないデータが存在することがわかっています
       copyrighttext: z.string().startsWith("© "),
       copyrightlink: z
         .string()
         .regex(
           /^https:\/\/www\.bing\.com\/search\?q=([^&]+)&form=BGALM(?:&filters=HpDate:"(\d{8}_\d{4})")$/
-        ), // en-GB ロケールにこのスキーマに適合しないデータが存在することが知られています
+        ), // 一部の地域では、このパターンにマッチしないデータが存在することがわかっています
       title: z.string(),
       description: z.string(),
       headline: z.string(),
@@ -52,7 +52,7 @@ z.object({
         .string()
         .regex(
           /^https:\/\/www\.bing\.com\/search\?q=Bing\+homepage\+quiz&filters=WQOskey:"HPQuiz_(\d{8})_([^"]+)"&FORM=BGAQ$/
-        ), // en-GB ロケールにこのスキーマに適合しないデータが存在することが知られています
+        ), // 一部の地域では、このパターンにマッチしないデータが存在することがわかっています
       mapLink: z.object({
         Url: z
           .string()

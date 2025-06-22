@@ -5,6 +5,7 @@
 from pathlib import Path
 from datetime import datetime
 from collections import OrderedDict
+from re import match
 
 from requests import get
 from pytz import utc, timezone as tz
@@ -29,10 +30,87 @@ LOCALES = OrderedDict(
     ]
 )
 
+DATA_DIR = Path.cwd() / "data"
+ARCHIVE_DIR = Path.cwd() / "archive"
+
+
+def is_data_valid(data):
+    """检查数据是否有效"""
+    if not (
+        isinstance(data.get("image_url"), str)
+        and match(
+            r"^https://www\.bing\.com/th\?id=OHR\.([A-Za-z0-9]+)_(DE-DE|EN-CA|EN-GB|"
+            r"EN-IN|EN-US|ES-ES|FR-CA|FR-FR|IT-IT|JA-JP|PT-BR|ZH-CN)(\d+)_UHD\.jpg$",
+            data["image_url"],
+        )
+    ):
+        return False
+
+    if not (
+        isinstance(data.get("copyright"), str) and data["copyright"].startswith("© ")
+    ):
+        return False
+
+    if not (
+        isinstance(data.get("search_url"), str)
+        and match(
+            r"^https://www\.bing\.com/search\?q=([^&]+)&form="
+            r"BGALM(?:&filters=HpDate:\"(\d{8}_\d{4})\")$",
+            data["search_url"],
+        )
+    ):
+        return False
+
+    if not (
+        isinstance(data.get("quiz_url"), str)
+        and match(
+            r"^https://www\.bing\.com/search\?q=Bing\+homepage\+quiz"
+            r"&filters=WQOskey:\"HPQuiz_(\d{8})_([^\"]+)\"&FORM=BGAQ$",
+            data["quiz_url"],
+        )
+    ):
+        return False
+
+    if not (
+        isinstance(data.get("map_image"), str)
+        and data["map_image"].startswith(
+            "https://platform.bing.com/geo/REST/v1/Imagery/Map/RoadVibrant/"
+        )
+    ):
+        return False
+
+    if not (
+        isinstance(data.get("map_url"), str)
+        and data["map_url"].startswith("https://www.bing.com/maps?")
+    ):
+        return False
+
+    # 所有验证通过
+    return True
+
+
+def is_different(origin_data, current_data):
+    """检查数据是否发生变化"""
+    for key in [
+        "image_url",
+        "copyright",
+        "search_url",
+        "title",
+        "description",
+        "headline",
+        "quiz_url",
+        "map_image",
+        "map_url",
+    ]:
+        if origin_data[key] != current_data[key]:
+            return True
+    return False
+
 
 def get_image_data(locale, data):
     """将原始数据格式转换为目标格式"""
 
+    # * ValueError
     utc_time = utc.localize(
         datetime.strptime(data.get("fullstartdate", ""), "%Y%m%d%H%M")
     )
@@ -59,7 +137,7 @@ def get_image_data(locale, data):
 def get_data_file_path(locale, backup=False) -> Path:
     """获取数据文件路径"""
     backup_suffix = f"_{datetime.now().strftime("%Y%m%d_%H%M%S")}" if backup else ""
-    file_path = Path.cwd() / "data" / f"{locale}{backup_suffix}.jsonl"
+    file_path = DATA_DIR / f"{locale}{backup_suffix}.jsonl"
     if (not file_path.exists()) and (not backup):
         file_path.touch()
     return file_path
@@ -80,7 +158,11 @@ def get_locale(locale):
     images_data = OrderedDict()
     for image in images:
         date, image_data = get_image_data(locale, image)
-        images_data[date] = image_data
+        if is_data_valid(image_data):
+            images_data[date] = image_data
+        else:
+            # TODO
+            pass
 
     file_path.rename(backup_file_path)
 
@@ -98,9 +180,7 @@ def get_locale(locale):
             for item_date, item_data in reversed(images_data.items()):
                 file.write(item_data)
 
-    backup_file_path.rename(
-        backup_file_path.parent / ".." / "archive" / backup_file_path.name
-    )
+    backup_file_path.rename(ARCHIVE_DIR / backup_file_path.name)
 
 
 def main():
