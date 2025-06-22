@@ -54,7 +54,7 @@ jobs:
           echo "" >> issue_body.md
           echo "@zhoushengdao" >> issue_body.md
           echo "" >> issue_body.md
-          echo "[[📜查看持久日志](https://github.com/zhoushengdao/bing_wallpaper/blob/main/data/error_log.jsonl)] [[⬇️下载本次日志](${{ steps.upload_log.outputs.artifact-url }})] [[💾下载备份数据](${{ steps.upload_backup.outputs.artifact-url }})]" >> issue_body.md
+          echo "[[📜查看持久日志](https://github.com/zhoushengdao/bing_wallpaper/blob/main/data/.error_log.jsonl)] [[⬇️下载本次日志](${{ steps.upload_log.outputs.artifact-url }})] [[💾下载备份数据](${{ steps.upload_backup.outputs.artifact-url }})]" >> issue_body.md
           echo "" >> issue_body.md
           echo '```' >> issue_body.md
           cat log.log >> issue_body.md
@@ -63,7 +63,7 @@ jobs:
       - name: Create a comment
         uses: peter-evans/create-or-update-comment@v4
         with:
-          issue-number: 1
+          issue-number: 2
           body-path: issue_body.md
 
       - name: Check for changes

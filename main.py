@@ -272,7 +272,7 @@ def main():
         except (ValueError, RequestException) as error:
             logger.error("[%s] %s %s", locale, type(error).__name__, error)
 
-    with jsonl_open(DATA_DIR / "error_log.jsonl", mode="a") as writer:
+    with jsonl_open(DATA_DIR / ".error_log.jsonl", mode="a") as writer:
         writer.write_all(persisted_error_log)
 
 
