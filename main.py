@@ -140,12 +140,11 @@ def get_data_file_path(locale, backup=False) -> Path:
 
 def get_locale(locale):
     """获取指定区域的壁纸数据"""
-    logger.info("[%s] 开始获取区域数据", locale)
     file_path = get_data_file_path(locale)
     backup_file_path = get_data_file_path(locale, backup=True)
 
     res = get(f"{API_BASE}{locale}", timeout=60)
-    logger.info("[%s] API 返回状态码 %s", locale, res.status_code)
+    logger.info("[%s] 开始获取区域数据，API 返回状态码 %s", locale, res.status_code)
     data = res.json()
     if "images" not in data:
         logger.info("[%s] data=%s", locale, dumps(data, indent=2))
