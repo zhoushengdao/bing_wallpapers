@@ -184,7 +184,9 @@ def get_locale(locale):
             or (not image["fullstartdate"])
         ):
             logger.info("[%s] image_data=%s", locale, dumps(image, indent=2))
-            logger.error("[%s] API 返回的 image 数据中缺少 fullstartdate 字段", locale)
+            logger.error(
+                "[%s] API 返回的 image 数据中缺少正确的 fullstartdate 字段", locale
+            )
             continue
 
         try:
