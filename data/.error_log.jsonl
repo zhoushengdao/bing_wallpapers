@@ -1,0 +1,11 @@
+{"locale": "de-DE", "date": "2025-06-19", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-22 18:44:53"}
+{"locale": "en-CA", "date": "2025-06-18", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-22 18:44:54"}
+{"locale": "en-CA", "date": "2025-06-15", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_572684305", "created": "2025-06-22 18:44:54"}
+{"locale": "en-GB", "date": "2025-06-19", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-22 18:44:54"}
+{"locale": "en-IN", "date": "2025-06-21", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.BiogradskoLakeMontenegro_AdobeStock_104526718", "created": "2025-06-22 18:44:54"}
+{"locale": "en-US", "date": "2025-06-18", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-22 18:44:54"}
+{"locale": "en-US", "date": "2025-06-15", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_572684305", "created": "2025-06-22 18:44:54"}
+{"locale": "fr-CA", "date": "2025-06-18", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-22 18:44:54"}
+{"locale": "fr-CA", "date": "2025-06-15", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_572684305", "created": "2025-06-22 18:44:54"}
+{"locale": "fr-FR", "date": "2025-06-19", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-22 18:44:55"}
+{"locale": "ja-JP", "date": "2025-06-19", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-22 18:44:55"}
