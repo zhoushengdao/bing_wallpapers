@@ -164,14 +164,14 @@ def get_locale(locale):
             date, image_data = get_image_data(locale, image)
         except ValueError as error:
             logger.info("[%s] image_data=%s", locale, dumps(image, indent=2))
-            logger.error("[%s] %s", locale, repr(error))
+            logger.error("[%s] %s %s", locale, type(error).__name__, error)
             continue
 
         try:
             valid_data(image_data)
         except (ValueError, KeyError) as error:
             logger.info("[%s] image_data=%s", locale, dumps(image_data, indent=2))
-            logger.error("[%s] %s", locale, repr(error))
+            logger.error("[%s] %s %s", locale, type(error).__name__, error)
         else:
             images_data[date] = image_data
 
@@ -237,7 +237,7 @@ def main():
         try:
             get_locale(locale)
         except (ValueError, RequestException) as error:
-            logger.error("[%s] %s", locale, repr(error))
+            logger.error("[%s] %s %s", locale, type(error).__name__, error)
 
 
 if __name__ == "__main__":
