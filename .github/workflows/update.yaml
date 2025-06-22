@@ -31,28 +31,33 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "gitHub-actions[bot]"
 
-      - run: mkdir -p archive/
-
       - name: Update Bing Wallpaper
         run: python main.py
 
-      - uses: actions/upload-artifact@v4
+      - name: Upload auto backup data
+        uses: actions/upload-artifact@v4
         with:
           name: bing_wallpapers_data_auto_backup
           path: archive/
 
-      - uses: actions/upload-artifact@v4
+      - name: Upload auto update log
+        id: upload_log
+        uses: actions/upload-artifact@v4
         with:
-          name: bing_wallpapers_log
+          name: bing_wallpapers_auto_update_log
           path: log.log
 
-      - run: |
+      - name: Make issue body
+        run: |
           echo "# 自动更新 $(date +'%Y-%m-%d %H:%M:%S')" > issue_body.md
-          echo '```' >> issue_body.md
+          echo "下载日志：[${{ steps.upload_log.outputs.artifact-url }}](${{ steps.upload_log.outputs.artifact-url }})" >> issue_body.md
+          echo "" >> issue_body.md
+          echo "```" >> issue_body.md
           cat log.log >> issue_body.md
-          echo '```' >> issue_body.md
+          echo "```" >> issue_body.md
 
-      - uses: peter-evans/create-or-update-comment@v4
+      - name: Create a comment
+        uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: 1
           body-path: issue_body.md

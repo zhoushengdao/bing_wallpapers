@@ -18,6 +18,7 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s %(levelname)s %(message)s",
     encoding="utf-8",
+    datefmt="%H:%M:%S",
 )
 logger = logging.getLogger(__name__)
 
@@ -42,6 +43,7 @@ LOCALES = OrderedDict(
 
 DATA_DIR = Path.cwd() / "data"
 ARCHIVE_DIR = Path.cwd() / "archive"
+ARCHIVE_DIR.mkdir(exist_ok=True)
 
 
 def valid_data(data):
