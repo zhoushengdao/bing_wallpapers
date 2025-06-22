@@ -58,8 +58,12 @@ z.object({
           .string()
           .startsWith(
             "https://platform.bing.com/geo/REST/v1/Imagery/Map/RoadVibrant/"
-          ),
-        Link: z.string().startsWith("https://www.bing.com/maps?"),
+          )
+          .or(z.literal("")),
+        Link: z
+          .string()
+          .startsWith("https://www.bing.com/maps?")
+          .or(z.literal("")),
       }),
       quizId: z.null(), // No se encontraron valores distintos de null
       fullDateString: z.string(), // Fecha local en idioma local
