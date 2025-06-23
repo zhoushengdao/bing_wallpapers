@@ -2,7 +2,7 @@
 
 import logging
 from collections import OrderedDict
-from datetime import datetime
+from datetime import datetime, timedelta
 from json import dumps
 from pathlib import Path
 from re import match
@@ -263,6 +263,39 @@ def get_locale(locale):
     backup_file_path.rename(ARCHIVE_DIR / backup_file_path.name)
 
 
+def check_locale(locale):
+    """检查数据文件中的日期连续性并记录缺失的日期"""
+    file_path = get_data_file_path(locale)
+
+    dates = []
+    with jsonl_open(file_path, mode="r") as file:
+        for item in file.iter(type=dict, skip_invalid=True):
+            dates.append(datetime.strptime(item["date"], "%Y-%m-%d").date())
+
+    if not dates:
+        return
+
+    # 按日期排序
+    dates.sort()
+
+    # 检查日期连续性
+    for i in range(1, len(dates)):
+        prev_date = dates[i - 1]
+        current_date = dates[i]
+
+        # 计算预期下一天
+        expected_date = prev_date + timedelta(days=1)
+
+        # 检查是否有日期缺失
+        while expected_date < current_date:
+            add_persisted_error(
+                locale,
+                expected_date.strftime("%Y-%m-%d"),
+                LookupError(f"{prev_date} 和 {current_date} 之间缺少 {expected_date}"),
+            )
+            expected_date += timedelta(days=1)
+
+
 def main():
     """主函数"""
     logger.info("程序启动")
@@ -271,6 +304,11 @@ def main():
             get_locale(locale)
         except (ValueError, RequestException) as error:
             logger.error("[%s] %s %s", locale, type(error).__name__, error)
+
+        try:
+            check_locale(locale)
+        except (ValueError, KeyError):
+            pass
 
     with jsonl_open(DATA_DIR / ".error_log.jsonl", mode="a") as writer:
         writer.write_all(persisted_error_log)
