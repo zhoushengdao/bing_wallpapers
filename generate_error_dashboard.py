@@ -36,7 +36,7 @@ def generate_error_dashboard(input_path: Path, output_path: Path):
 
     # 生成 Markdown 内容
     md_content = [
-        f"- **生成时间**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
+        f"- **生成时间**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} UTC",
         f"- **数据来源**: [`{input_path.name}`]"
         "(https://github.com/zhoushengdao/bing_wallpaper/blob/main/data/.error_log.jsonl)",
         "",

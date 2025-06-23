@@ -56,7 +56,7 @@ def add_persisted_error(locale, date, error):
             "date": date,
             "type": type(error).__name__,
             "message": str(error),
-            "created": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "created": f"{datetime.now().strftime("%Y-%m-%d %H:%M:%S")} UTC",
         }
     )
 
@@ -149,7 +149,7 @@ def get_image_data(locale, data):
 
 def get_data_file_path(locale, backup=False) -> Path:
     """获取数据文件路径"""
-    backup_suffix = f"_{datetime.now().strftime("%Y%m%d_%H%M%S")}" if backup else ""
+    backup_suffix = f"_{datetime.now().strftime("%Y%m%d_%H%M%S")}_UTC" if backup else ""
     file_path = DATA_DIR / f"{locale}{backup_suffix}.jsonl"
     if (not file_path.exists()) and (not backup):
         file_path.touch()

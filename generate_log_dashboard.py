@@ -104,10 +104,8 @@ def generate_log_dashboard(input_path: Path, output_path: Path):
     overview_table = "\n".join(overview_lines)
 
     # 生成完整 Markdown 内容
-    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
     md_content = [
-        f"# 自动更新 {current_time}",
+        f"# 自动更新 {datetime.now().strftime("%Y-%m-%d %H:%M:%S")} UTC",
         "",
         "[[📜查看持久日志]"
         "(https://github.com/zhoushengdao/bing_wallpaper/blob/main/data/.error_log.jsonl)] "
