@@ -48,17 +48,11 @@ jobs:
           name: bing_wallpapers_auto_update_log
           path: log.log
 
-      - name: Make issue body
-        run: |
-          echo "# 自动更新 $(date +'%Y-%m-%d %H:%M:%S')" > issue_body.md
-          echo "" >> issue_body.md
-          echo "@zhoushengdao" >> issue_body.md
-          echo "" >> issue_body.md
-          echo "[[📜查看持久日志](https://github.com/zhoushengdao/bing_wallpaper/blob/main/data/.error_log.jsonl)] [[⬇️下载本次日志](${{ steps.upload_log.outputs.artifact-url }})] [[💾下载备份数据](${{ steps.upload_backup.outputs.artifact-url }})]" >> issue_body.md
-          echo "" >> issue_body.md
-          echo '```' >> issue_body.md
-          cat log.log >> issue_body.md
-          echo '```' >> issue_body.md
+      - name: Generate Log Dashboard
+        run: python generate_log_dashboard.py
+        env:
+          LOG_URL: ${{ steps.upload_log.outputs.artifact-url }}
+          BACKUP_URL: ${{ steps.upload_backup.outputs.artifact-url }}
 
       - name: Create a comment
         uses: peter-evans/create-or-update-comment@v4

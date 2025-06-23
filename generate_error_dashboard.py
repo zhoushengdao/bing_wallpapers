@@ -44,9 +44,9 @@ def generate_error_dashboard(input_path: Path, output_path: Path):
         f"- **总错误数**: {len(data)}",
         f"- **覆盖日期范围**: {min(unique_dates)} 到 {max(unique_dates)}",
         "",
-        "## 按地区和日期统计",
-        "| 地区 ＼ 日期 | " + " | ".join(unique_dates) + " |",
-        "|--------------|" + "---|" * len(unique_dates),
+        "## 按区域和日期统计",
+        "| 区域 ＼ 日期 | " + " | ".join(unique_dates) + " |",
+        "|--------------|" + ":---:|" * len(unique_dates),
     ]
 
     # 添加表格行
