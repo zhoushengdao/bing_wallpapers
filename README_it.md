@@ -89,6 +89,8 @@ z.object({
 
 ## Elenco dei campi
 
+Questo progetto utilizza jsonl per memorizzare i dati. I dati di ogni locale sono collocati nel file corrispondente nella cartella `data`. Ogni riga rappresenta lo sfondo del giorno, e ogni sfondo giornaliero possiede i seguenti campi:
+
 | Nome del campo    | Origine                                                                                    | Note                     |
 | :---------------- | :----------------------------------------------------------------------------------------- | :----------------------- |
 | `date`            | Data ottenuta aggiungendo l'offset del fuso orario (vedi sopra) a `images[].fullstartdate` | Solo la parte della data |
@@ -105,3 +107,12 @@ z.object({
 
 1. `image_url` restituisce per impostazione predefinita un'immagine 4K orizzontale (3840x2160). È possibile ritagliare l'immagine aggiungendo i parametri `&w=<larghezza>&h=<altezza>&rs=1&c=4`, ma fare attenzione a non superare le dimensioni massime dell'immagine.
 2. `map_image` e `map_url` sono attualmente disponibili solo parzialmente per le immagini nelle seguenti regioni: `de-DE`, `en-CA`, `en-GB`, `en-IN`, `en-US`, `fr-CA`, `fr-FR`, `it-IT`, `ja-JP`.
+
+## Progetti simili
+
+- <https://wallpaper.bokewo.com/> (`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`es-ES`、`fr-CA`、`fr-FR`、`ja-JP`、`zh-CN`)
+- <https://dailybing.com/> (`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`es-ES`、`fr-FR`、`it-IT`、`ja-JP`、`pt-BR`、`zh-CN`)
+- <https://github.com/zkeq/Bing-Wallpaper-Action/> (`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`fr-FR`、`it-IT`、`ja-JP`、`zh-CN`)
+- <https://bing.gifposter.com/> (`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`es-ES`、`fr-FR`、`it-IT`、`ja-JP`、`pt-BR`、`zh-CN`)
+- <https://peapix.com/bing/> (`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`es-ES`、`fr-FR`、`it-IT`、`ja-JP`、`pt-BR`、`zh-CN`)
+- <https://bingwallpaper.anerg.com/> (`de-DE`、`en-CA`、`en-GB`、`en-US`、`es-ES`、`fr-FR`、`it-IT`、`ja-JP`、`zh-CN`)

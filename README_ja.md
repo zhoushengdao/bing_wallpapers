@@ -89,6 +89,8 @@ z.object({
 
 ## フィールドリスト
 
+本プロジェクトではデータ保存に jsonl を採用しています。各ロケールのデータは `data` フォルダ内の対応するファイルに保存されます。各行が 1 日分の壁紙を表し、各日の壁紙には以下のフィールドがあります：
+
 | フィールド名      | ソース                                                                              | 備考                       |
 | :---------------- | :---------------------------------------------------------------------------------- | :------------------------- |
 | `date`            | `images[].fullstartdate` にタイムゾーンオフセット（上記参照）を追加して得られる日付 | 日付部分のみ               |
@@ -105,3 +107,12 @@ z.object({
 
 1. `image_url` はデフォルトで横長の 4K 画像（3840x2160）を返します。パラメータ `&w=<幅>&h=<高さ>&rs=1&c=4` を追加することで画像をトリミングできますが、画像の最大サイズを超えないように注意してください。
 2. `map_image` と `map_url` は現在、以下の地域の一部画像でのみ提供されています：`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`fr-CA`、`fr-FR`、`it-IT`、`ja-JP`。
+
+## 類似プロジェクト
+
+- <https://wallpaper.bokewo.com/> (`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`es-ES`、`fr-CA`、`fr-FR`、`ja-JP`、`zh-CN`)
+- <https://dailybing.com/> (`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`es-ES`、`fr-FR`、`it-IT`、`ja-JP`、`pt-BR`、`zh-CN`)
+- <https://github.com/zkeq/Bing-Wallpaper-Action/> (`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`fr-FR`、`it-IT`、`ja-JP`、`zh-CN`)
+- <https://bing.gifposter.com/> (`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`es-ES`、`fr-FR`、`it-IT`、`ja-JP`、`pt-BR`、`zh-CN`)
+- <https://peapix.com/bing/> (`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`es-ES`、`fr-FR`、`it-IT`、`ja-JP`、`pt-BR`、`zh-CN`)
+- <https://bingwallpaper.anerg.com/> (`de-DE`、`en-CA`、`en-GB`、`en-US`、`es-ES`、`fr-FR`、`it-IT`、`ja-JP`、`zh-CN`)

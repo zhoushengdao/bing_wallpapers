@@ -89,6 +89,8 @@ z.object({
 
 ## 字段列表
 
+本项目采用 jsonl 来存储数据，每个区域的数据放于 `data` 文件夹下对应文件中，每行表示一天的壁纸，每天的壁纸拥有如下字段：
+
 | 字段名            | 来源                                                    | 备注                 |
 | :---------------- | :------------------------------------------------------ | :------------------- |
 | `date`            | `images[].fullstartdate` 附加时区偏移（见上）得到的日期 | 只有日期部分         |
@@ -105,3 +107,12 @@ z.object({
 
 1. `image_url` 默认返回横屏 4K 图片（3840x2160），可以通过附加 `&w=<宽>&h=<高>&rs=1&c=4` 参数来裁剪图片，但要注意不能超过图片的最大尺寸。
 2. `map_image` 和 `map_url` 目前只在以下区域的部分图片上提供：`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`fr-CA`、`fr-FR`、`it-IT`、`ja-JP`。
+
+## 相似项目
+
+- <https://wallpaper.bokewo.com/> (`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`es-ES`、`fr-CA`、`fr-FR`、`ja-JP`、`zh-CN`)
+- <https://dailybing.com/> (`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`es-ES`、`fr-FR`、`it-IT`、`ja-JP`、`pt-BR`、`zh-CN`)
+- <https://github.com/zkeq/Bing-Wallpaper-Action/> (`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`fr-FR`、`it-IT`、`ja-JP`、`zh-CN`)
+- <https://bing.gifposter.com/> (`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`es-ES`、`fr-FR`、`it-IT`、`ja-JP`、`pt-BR`、`zh-CN`)
+- <https://peapix.com/bing/> (`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`es-ES`、`fr-FR`、`it-IT`、`ja-JP`、`pt-BR`、`zh-CN`)
+- <https://bingwallpaper.anerg.com/> (`de-DE`、`en-CA`、`en-GB`、`en-US`、`es-ES`、`fr-FR`、`it-IT`、`ja-JP`、`zh-CN`)

@@ -89,6 +89,8 @@ z.object({
 
 ## Field List
 
+This project uses jsonl to store data. The data for each locale is placed in the corresponding file under the `data` folder. Each line represents one day's wallpaper, with each day's wallpaper having the following fields:
+
 | Field Name        | Source                                                                              | Remarks                       |
 | :---------------- | :---------------------------------------------------------------------------------- | :---------------------------- |
 | `date`            | Date obtained by adding the timezone offset (see above) to `images[].fullstartdate` | Date part only                |
@@ -105,3 +107,12 @@ z.object({
 
 1. `image_url` returns a landscape 4K image (3840x2160) by default. You can crop the image by appending the parameters `&w=<width>&h=<height>&rs=1&c=4`, but be careful not to exceed the image's maximum dimensions.
 2. `map_image` and `map_url` are currently only partially available for images in the following regions: `de-DE`, `en-CA`, `en-GB`, `en-IN`, `en-US`, `fr-CA`, `fr-FR`, `it-IT`, `ja-JP`.
+
+## Similar projects
+
+- <https://wallpaper.bokewo.com/> (`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`es-ES`、`fr-CA`、`fr-FR`、`ja-JP`、`zh-CN`)
+- <https://dailybing.com/> (`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`es-ES`、`fr-FR`、`it-IT`、`ja-JP`、`pt-BR`、`zh-CN`)
+- <https://github.com/zkeq/Bing-Wallpaper-Action/> (`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`fr-FR`、`it-IT`、`ja-JP`、`zh-CN`)
+- <https://bing.gifposter.com/> (`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`es-ES`、`fr-FR`、`it-IT`、`ja-JP`、`pt-BR`、`zh-CN`)
+- <https://peapix.com/bing/> (`de-DE`、`en-CA`、`en-GB`、`en-IN`、`en-US`、`es-ES`、`fr-FR`、`it-IT`、`ja-JP`、`pt-BR`、`zh-CN`)
+- <https://bingwallpaper.anerg.com/> (`de-DE`、`en-CA`、`en-GB`、`en-US`、`es-ES`、`fr-FR`、`it-IT`、`ja-JP`、`zh-CN`)
