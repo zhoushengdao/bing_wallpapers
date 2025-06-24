@@ -30,3 +30,11 @@
 {"locale": "fr-CA", "date": "2025-06-18", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-24 13:07:52 UTC"}
 {"locale": "fr-FR", "date": "2025-06-19", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-24 13:07:53 UTC"}
 {"locale": "ja-JP", "date": "2025-06-19", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-24 13:07:53 UTC"}
+{"locale": "de-DE", "date": "2025-06-19", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-24 18:48:31 UTC"}
+{"locale": "en-CA", "date": "2025-06-18", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-24 18:48:31 UTC"}
+{"locale": "en-GB", "date": "2025-06-19", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-24 18:48:31 UTC"}
+{"locale": "en-IN", "date": "2025-06-21", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.SumilonIslandPhilippines_AdobeStock_152111654", "created": "2025-06-24 18:48:31 UTC"}
+{"locale": "en-US", "date": "2025-06-18", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-24 18:48:32 UTC"}
+{"locale": "fr-CA", "date": "2025-06-18", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-24 18:48:32 UTC"}
+{"locale": "fr-FR", "date": "2025-06-19", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-24 18:48:33 UTC"}
+{"locale": "ja-JP", "date": "2025-06-19", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-24 18:48:33 UTC"}
