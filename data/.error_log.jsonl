@@ -73,3 +73,8 @@
 {"locale": "fr-CA", "date": "2025-06-18", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-26 02:24:54 UTC"}
 {"locale": "fr-FR", "date": "2025-06-19", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-26 02:24:54 UTC"}
 {"locale": "ja-JP", "date": "2025-06-19", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-26 02:24:54 UTC"}
+{"locale": "de-DE", "date": "2025-06-19", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-26 06:50:11 UTC"}
+{"locale": "en-IN", "date": "2025-06-21", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.ChainBridgeBudapest_shutterstock_1153376083", "created": "2025-06-26 06:50:11 UTC"}
+{"locale": "en-US", "date": "2025-06-18", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-26 06:50:11 UTC"}
+{"locale": "fr-FR", "date": "2025-06-19", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-26 06:50:12 UTC"}
+{"locale": "ja-JP", "date": "2025-06-19", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-26 06:50:12 UTC"}
