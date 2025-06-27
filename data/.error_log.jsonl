@@ -86,3 +86,4 @@
 {"locale": "en-IN", "date": "2025-06-21", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.Lock2019-B20_CastleMarvaoPortugal_shutterstock_1042748959", "created": "2025-06-26 18:48:25 UTC"}
 {"locale": "fr-FR", "date": "2025-06-19", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130455024", "created": "2025-06-26 18:48:25 UTC"}
 {"locale": "en-IN", "date": "2025-06-21", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.ChainBridgeBudapest_shutterstock_1153376083", "created": "2025-06-27 02:24:54 UTC"}
+{"locale": "en-IN", "date": "2025-06-21", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.ChainBridgeBudapest_shutterstock_1153376083", "created": "2025-06-27 06:50:11 UTC"}
