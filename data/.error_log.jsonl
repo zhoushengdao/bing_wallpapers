@@ -6,3 +6,4 @@
 {"locale": "en-IN", "date": "2025-06-21", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.ChainBridgeBudapest_shutterstock_1153376083", "created": "2025-06-28 06:46:05 UTC"}
 {"locale": "de-DE", "date": "2025-06-28", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.Lock2018-B12_SchlossLeopoldskronAustria_AdobeStock_74090152", "created": "2025-06-28 13:01:14 UTC"}
 {"locale": "en-IN", "date": "2025-06-21", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.ChainBridgeBudapest_shutterstock_1153376083", "created": "2025-06-28 13:01:15 UTC"}
+{"locale": "de-DE", "date": "2025-06-28", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.Lock2018-B12_SchlossLeopoldskronAustria_AdobeStock_74090152", "created": "2025-06-28 18:46:04 UTC"}
