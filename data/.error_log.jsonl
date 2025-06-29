@@ -9,3 +9,5 @@
 {"locale": "de-DE", "date": "2025-06-28", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.Lock2018-B12_SchlossLeopoldskronAustria_AdobeStock_74090152", "created": "2025-06-28 18:46:04 UTC"}
 {"locale": "de-DE", "date": "2025-06-28", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.Lock2018-B12_SchlossLeopoldskronAustria_AdobeStock_74090152", "created": "2025-06-29 02:36:02 UTC"}
 {"locale": "de-DE", "date": "2025-06-28", "type": "LookupError", "message": "2025-06-27 和 2025-06-29 之间缺少 2025-06-28", "created": "2025-06-29 02:36:02 UTC"}
+{"locale": "de-DE", "date": "2025-06-28", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.Lock2018-B12_SchlossLeopoldskronAustria_AdobeStock_74090152", "created": "2025-06-29 06:47:43 UTC"}
+{"locale": "de-DE", "date": "2025-06-28", "type": "LookupError", "message": "2025-06-27 和 2025-06-29 之间缺少 2025-06-28", "created": "2025-06-29 06:47:43 UTC"}
