@@ -66,7 +66,7 @@ jobs:
 
       - name: Commit files
         if: steps.check_changes.outputs.changes_exist != '0'
-        run: git commit -a -m "自动更新 $(date +'%Y-%m-%d %H:%M:%S') UTC"
+        run: git commit -a -m "自动更新 $(date -u +'%Y-%m-%d %H:%M:%S') UTC"
 
       - name: Push changes
         if: steps.check_changes.outputs.changes_exist != '0'
