@@ -2,3 +2,6 @@
 {"locale": "de-DE", "date": "2025-06-28", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.Lock2017-B10_GullfossWaterfallIceland_AdobeStock_134263414", "created": "2025-07-04 02:24:10 UTC"}
 {"locale": "de-DE", "date": "2025-06-28", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.Lock2017-B10_GullfossWaterfallIceland_AdobeStock_134263414", "created": "2025-07-04 06:51:13 UTC"}
 {"locale": "de-DE", "date": "2025-06-28", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.Lock2017-B10_GullfossWaterfallIceland_AdobeStock_134263414", "created": "2025-07-04 13:04:55 UTC"}
+{"locale": "de-DE", "date": "2025-06-28", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.Lock2017-B10_GullfossWaterfallIceland_AdobeStock_134263414", "created": "2025-07-04 18:46:25 UTC"}
+{"locale": "en-IN", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.Lock2018-B12_TatrasMtsPoland_AdobeStock_108007408", "created": "2025-07-04 18:46:25 UTC"}
+{"locale": "ja-JP", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.Lock2018-B12_TatrasMtsPoland_AdobeStock_108007408", "created": "2025-07-04 18:46:26 UTC"}
