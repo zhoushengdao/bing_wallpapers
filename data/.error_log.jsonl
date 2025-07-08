@@ -267,3 +267,27 @@
 {"locale": "ja-JP", "date": "2025-07-05", "type": "LookupError", "message": "2025-07-04 和 2025-07-06 之间缺少 2025-07-05", "created": "2025-07-08 14:12:46 UTC"}
 {"locale": "pt-BR", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 14:12:47 UTC"}
 {"locale": "pt-BR", "date": "2025-07-05", "type": "LookupError", "message": "2025-07-04 和 2025-07-06 之间缺少 2025-07-05", "created": "2025-07-08 14:12:47 UTC"}
+{"locale": "de-DE", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 06:51:07 UTC"}
+{"locale": "de-DE", "date": "2025-07-05", "type": "LookupError", "message": "2025-07-04 和 2025-07-06 之间缺少 2025-07-05", "created": "2025-07-08 06:51:07 UTC"}
+{"locale": "en-CA", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 06:51:07 UTC"}
+{"locale": "en-CA", "date": "2025-07-05", "type": "LookupError", "message": "2025-07-04 和 2025-07-06 之间缺少 2025-07-05", "created": "2025-07-08 06:51:07 UTC"}
+{"locale": "en-GB", "date": "2025-07-06", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.Lock2017-B10_GullfossWaterfallIceland_AdobeStock_134263414", "created": "2025-07-08 06:51:08 UTC"}
+{"locale": "en-GB", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 06:51:08 UTC"}
+{"locale": "en-GB", "date": "2025-07-05", "type": "LookupError", "message": "2025-07-04 和 2025-07-07 之间缺少 2025-07-05", "created": "2025-07-08 06:51:08 UTC"}
+{"locale": "en-GB", "date": "2025-07-06", "type": "LookupError", "message": "2025-07-04 和 2025-07-07 之间缺少 2025-07-06", "created": "2025-07-08 06:51:08 UTC"}
+{"locale": "en-IN", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 06:51:08 UTC"}
+{"locale": "en-IN", "date": "2025-07-05", "type": "LookupError", "message": "2025-07-04 和 2025-07-06 之间缺少 2025-07-05", "created": "2025-07-08 06:51:08 UTC"}
+{"locale": "en-US", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.Lock2017-B10_GullfossWaterfallIceland_AdobeStock_134263414", "created": "2025-07-08 06:51:08 UTC"}
+{"locale": "en-US", "date": "2025-07-05", "type": "LookupError", "message": "2025-07-04 和 2025-07-06 之间缺少 2025-07-05", "created": "2025-07-08 06:51:08 UTC"}
+{"locale": "es-ES", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 06:51:08 UTC"}
+{"locale": "es-ES", "date": "2025-07-05", "type": "LookupError", "message": "2025-07-04 和 2025-07-06 之间缺少 2025-07-05", "created": "2025-07-08 06:51:08 UTC"}
+{"locale": "fr-CA", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 06:51:08 UTC"}
+{"locale": "fr-CA", "date": "2025-07-05", "type": "LookupError", "message": "2025-07-04 和 2025-07-06 之间缺少 2025-07-05", "created": "2025-07-08 06:51:08 UTC"}
+{"locale": "fr-FR", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 06:51:09 UTC"}
+{"locale": "fr-FR", "date": "2025-07-05", "type": "LookupError", "message": "2025-07-04 和 2025-07-06 之间缺少 2025-07-05", "created": "2025-07-08 06:51:09 UTC"}
+{"locale": "it-IT", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 06:51:09 UTC"}
+{"locale": "it-IT", "date": "2025-07-05", "type": "LookupError", "message": "2025-07-04 和 2025-07-06 之间缺少 2025-07-05", "created": "2025-07-08 06:51:09 UTC"}
+{"locale": "ja-JP", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 06:51:09 UTC"}
+{"locale": "ja-JP", "date": "2025-07-05", "type": "LookupError", "message": "2025-07-04 和 2025-07-06 之间缺少 2025-07-05", "created": "2025-07-08 06:51:09 UTC"}
+{"locale": "pt-BR", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 06:51:09 UTC"}
+{"locale": "pt-BR", "date": "2025-07-05", "type": "LookupError", "message": "2025-07-04 和 2025-07-06 之间缺少 2025-07-05", "created": "2025-07-08 06:51:09 UTC"}
