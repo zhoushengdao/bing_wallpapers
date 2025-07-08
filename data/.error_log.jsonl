@@ -10,3 +10,15 @@
 {"locale": "it-IT", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 13:06:59 UTC"}
 {"locale": "ja-JP", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 13:06:59 UTC"}
 {"locale": "pt-BR", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 13:07:00 UTC"}
+{"locale": "de-DE", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 18:49:39 UTC"}
+{"locale": "en-CA", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 18:49:39 UTC"}
+{"locale": "en-GB", "date": "2025-07-06", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.Lock2017-B10_GullfossWaterfallIceland_AdobeStock_134263414", "created": "2025-07-08 18:49:39 UTC"}
+{"locale": "en-GB", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 18:49:39 UTC"}
+{"locale": "en-IN", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.DurdevicaTaraBridge_AdobeStock_216089172", "created": "2025-07-08 18:49:39 UTC"}
+{"locale": "en-US", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 18:49:39 UTC"}
+{"locale": "es-ES", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 18:49:39 UTC"}
+{"locale": "fr-CA", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 18:49:40 UTC"}
+{"locale": "fr-FR", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 18:49:40 UTC"}
+{"locale": "it-IT", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 18:49:40 UTC"}
+{"locale": "ja-JP", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.DurdevicaTaraBridge_AdobeStock_216089172", "created": "2025-07-08 18:49:40 UTC"}
+{"locale": "pt-BR", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.HarpaReykjavikIceland_AdobeStock_58523886", "created": "2025-07-08 18:49:40 UTC"}
