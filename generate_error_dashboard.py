@@ -20,7 +20,20 @@ def generate_error_dashboard(input_path: Path, output_path: Path):
         return
 
     if not data:
-        print("错误日志为空")
+        md_content = [
+            f"- **生成时间**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} UTC",
+            "- **生成状态**: [![Generate Error Dashboard](https://github.com/zhoushengdao/"
+            "bing_wallpaper/actions/workflows/dashboard.yaml/badge.svg?event=schedule)]"
+            "(https://github.com/zhoushengdao/bing_wallpaper/actions/workflows/dashboard.yaml)",
+            f"- **数据来源**: [`{input_path.name}`]"
+            "(https://github.com/zhoushengdao/bing_wallpaper/blob/main/data/.error_log.jsonl)",
+            "",
+            "## 概览",
+            "- **总错误数**: 0",
+        ]
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.write("\n".join(md_content))
+        print(f"仪表盘已生成至：{output_path}")
         return
 
     # 基础统计
