@@ -107,7 +107,7 @@ def generate_log_dashboard(input_path: Path, output_path: Path):
     md_content = [
         f"# 自动更新 {datetime.now().strftime("%Y-%m-%d %H:%M:%S")} UTC",
         "",
-        "[[📜查看持久日志](https://github.com/zhoushengdao/bing_wallpaper/issues/3)] "
+        "[[📜查看持久日志](https://github.com/zhoushengdao/bing_wallpapers/issues/3)] "
         f"[[⬇️下载本次日志]({getenv('LOG_URL')})] "
         f"[[💾下载备份数据]({getenv('BACKUP_URL')})]",
         "",

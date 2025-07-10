@@ -24,9 +24,9 @@ def generate_error_dashboard(input_path: Path, output_path: Path):
             f"- **生成时间**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} UTC",
             "- **生成状态**: [![Generate Error Dashboard](https://github.com/zhoushengdao/"
             "bing_wallpaper/actions/workflows/dashboard.yaml/badge.svg?event=schedule)]"
-            "(https://github.com/zhoushengdao/bing_wallpaper/actions/workflows/dashboard.yaml)",
+            "(https://github.com/zhoushengdao/bing_wallpapers/actions/workflows/dashboard.yaml)",
             f"- **数据来源**: [`{input_path.name}`]"
-            "(https://github.com/zhoushengdao/bing_wallpaper/blob/main/data/.error_log.jsonl)",
+            "(https://github.com/zhoushengdao/bing_wallpapers/blob/main/data/.error_log.jsonl)",
             "",
             "## 概览",
             "- **总错误数**: 0",
@@ -50,11 +50,11 @@ def generate_error_dashboard(input_path: Path, output_path: Path):
     # 生成 Markdown 内容
     md_content = [
         f"- **生成时间**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} UTC",
-        "- **生成状态**: [![Generate Error Dashboard](https://github.com/zhoushengdao/bing_wallpaper"
+        "- **生成状态**: [![Generate Error Dashboard](https://github.com/zhoushengdao/bing_wallpapers"
         "/actions/workflows/dashboard.yaml/badge.svg?event=schedule)](https://github.com"
-        "/zhoushengdao/bing_wallpaper/actions/workflows/dashboard.yaml)",
+        "/zhoushengdao/bing_wallpapers/actions/workflows/dashboard.yaml)",
         f"- **数据来源**: [`{input_path.name}`]"
-        "(https://github.com/zhoushengdao/bing_wallpaper/blob/main/data/.error_log.jsonl)",
+        "(https://github.com/zhoushengdao/bing_wallpapers/blob/main/data/.error_log.jsonl)",
         "",
         "## 概览",
         f"- **总错误数**: {len(data)}",

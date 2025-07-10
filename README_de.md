@@ -1,6 +1,6 @@
 # Bing-Hintergrundbilder
 
-[![Update Bing Wallpaper](https://github.com/zhoushengdao/bing_wallpaper/actions/workflows/update.yaml/badge.svg?event=schedule)](https://github.com/zhoushengdao/bing_wallpaper/actions/workflows/update.yaml)
+[![Update Bing Wallpaper](https://github.com/zhoushengdao/bing_wallpapers/actions/workflows/update.yaml/badge.svg?event=schedule)](https://github.com/zhoushengdao/bing_wallpapers/actions/workflows/update.yaml)
 
 [[🇨🇦 🇬🇧 🇮🇳 🇺🇸 English Englisch](README_en.md)] [[🇪🇸 Español Spanisch](README_es.md)] [[🇨🇦 🇫🇷 Français Französisch](README_fr.md)] [[🇮🇹 Italiano ](README_it.md)] [[🇯🇵 日本語 Japanisch](README_ja.md)] [[🇧🇷 Português Portugiesisch](README_pt.md)] [[🇨🇳 中文 Chinesisch](README.md)]
 
