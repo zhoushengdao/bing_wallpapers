@@ -111,3 +111,4 @@
 {"locale": "pt-BR", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_173631643", "created": "2025-07-13 02:39:28 UTC"}
 {"locale": "en-GB", "date": "2025-07-06", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_173631643", "created": "2025-07-13 06:50:01 UTC"}
 {"locale": "en-US", "date": "2025-07-05", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_173631643", "created": "2025-07-13 06:50:01 UTC"}
+{"locale": "en-GB", "date": "2025-07-06", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_173631643", "created": "2025-07-13 13:03:26 UTC"}
