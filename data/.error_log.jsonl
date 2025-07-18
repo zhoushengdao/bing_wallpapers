@@ -8,3 +8,6 @@
 {"locale": "de-DE", "date": "2025-07-17", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_178756391", "created": "2025-07-18 06:54:55 UTC"}
 {"locale": "de-DE", "date": "2025-07-17", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_173631643", "created": "2025-07-18 06:54:55 UTC"}
 {"locale": "de-DE", "date": "2025-07-17", "type": "LookupError", "message": "2025-07-16 和 2025-07-18 之间缺少 2025-07-17", "created": "2025-07-18 06:54:55 UTC"}
+{"locale": "de-DE", "date": "2025-07-17", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_178756391", "created": "2025-07-18 13:10:05 UTC"}
+{"locale": "de-DE", "date": "2025-07-17", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_173631643", "created": "2025-07-18 13:10:05 UTC"}
+{"locale": "de-DE", "date": "2025-07-17", "type": "LookupError", "message": "2025-07-16 和 2025-07-18 之间缺少 2025-07-17", "created": "2025-07-18 13:10:05 UTC"}
