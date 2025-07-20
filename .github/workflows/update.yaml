@@ -40,6 +40,7 @@ jobs:
         with:
           name: bing_wallpapers_data_auto_backup
           path: archive/
+          retention-days: 14
 
       - name: Upload auto update log
         id: upload_log
@@ -47,6 +48,7 @@ jobs:
         with:
           name: bing_wallpapers_auto_update_log
           path: log.log
+          retention-days: 3
 
       - name: Generate Log Dashboard
         run: python generate_log_dashboard.py
