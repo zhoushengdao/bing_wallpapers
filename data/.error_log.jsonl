@@ -6,3 +6,5 @@
 {"locale": "de-DE", "date": "2025-07-17", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_105344202", "created": "2025-07-23 02:34:42 UTC"}
 {"locale": "de-DE", "date": "2025-07-17", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_89583408", "created": "2025-07-23 06:53:44 UTC"}
 {"locale": "de-DE", "date": "2025-07-17", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_105344202", "created": "2025-07-23 06:53:44 UTC"}
+{"locale": "de-DE", "date": "2025-07-17", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_89583408", "created": "2025-07-23 13:11:04 UTC"}
+{"locale": "de-DE", "date": "2025-07-17", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_105344202", "created": "2025-07-23 13:11:04 UTC"}
