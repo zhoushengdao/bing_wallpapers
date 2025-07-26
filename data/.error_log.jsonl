@@ -32,3 +32,5 @@
 {"locale": "de-DE", "date": "2025-07-24", "type": "LookupError", "message": "2025-07-23 和 2025-07-25 之间缺少 2025-07-24", "created": "2025-07-26 06:50:54 UTC"}
 {"locale": "de-DE", "date": "2025-07-24", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_83373515", "created": "2025-07-26 13:05:15 UTC"}
 {"locale": "de-DE", "date": "2025-07-24", "type": "LookupError", "message": "2025-07-23 和 2025-07-25 之间缺少 2025-07-24", "created": "2025-07-26 13:05:15 UTC"}
+{"locale": "de-DE", "date": "2025-07-24", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_83373515", "created": "2025-07-26 18:48:34 UTC"}
+{"locale": "de-DE", "date": "2025-07-24", "type": "LookupError", "message": "2025-07-23 和 2025-07-25 之间缺少 2025-07-24", "created": "2025-07-26 18:48:34 UTC"}
