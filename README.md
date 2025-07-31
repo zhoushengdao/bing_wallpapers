@@ -27,6 +27,8 @@
 
 [https://services.bingapis.com/ge-apps/api/v2/bwc/hpimages?mkt=](https://services.bingapis.com/ge-apps/api/v2/bwc/hpimages?mkt=)
 
+<!-- https://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=8&uhd=1&uhdwidth=3840&uhdheight=2160 -->
+
 返回的数据结构用 [zod](https://zod.dev/) 表示如下。
 
 ```javascript
@@ -40,7 +42,10 @@ z.object({
         .string()
         .regex(
           /^https:\/\/www\.bing\.com\/th\?id=OHR\.([A-Za-z0-9]+)_(DE-DE|EN-CA|EN-GB|EN-IN|EN-US|ES-ES|FR-CA|FR-FR|IT-IT|JA-JP|PT-BR|ZH-CN)(\d+)_UHD\.jpg$/
-        ), // 已知部分区域存在不符合该模式的数据
+        ), // 已知部分区域存在不符合该模式的数据  // UHD 可改为 1920x1080、1080x1920、1366x768、768x1366、1920x1200、1024x768、768x1024、800x600
+      copyrightlink: z.string().regex(/^\/search\?.+&form=HPHeader$/),
+      copyrighttext: z.string().startsWith("© "),
+      copyrightlink: z.string().regex(/^\/search\?.+/),
       copyrighttext: z.string().startsWith("© "),
       copyrightlink: z
         .string()
