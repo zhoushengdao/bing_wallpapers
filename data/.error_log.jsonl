@@ -1,0 +1,10 @@
+{"locale": "de-DE", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_132265013", "created": "2025-08-02 06:49:51 UTC"}
+{"locale": "en-CA", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_132265013", "created": "2025-08-02 06:49:51 UTC"}
+{"locale": "en-GB", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_132265013", "created": "2025-08-02 06:49:51 UTC"}
+{"locale": "en-US", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_130275811", "created": "2025-08-02 06:49:51 UTC"}
+{"locale": "es-ES", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_132265013", "created": "2025-08-02 06:49:52 UTC"}
+{"locale": "fr-CA", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_132265013", "created": "2025-08-02 06:49:52 UTC"}
+{"locale": "fr-FR", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_132265013", "created": "2025-08-02 06:49:52 UTC"}
+{"locale": "it-IT", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_132265013", "created": "2025-08-02 06:49:52 UTC"}
+{"locale": "ja-JP", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_132265013", "created": "2025-08-02 06:49:52 UTC"}
+{"locale": "pt-BR", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_132265013", "created": "2025-08-02 06:49:53 UTC"}
