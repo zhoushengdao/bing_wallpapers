@@ -147,3 +147,13 @@
 {"locale": "it-IT", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_319511774", "created": "2025-08-05 18:55:50 UTC"}
 {"locale": "ja-JP", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_386871833", "created": "2025-08-05 18:55:50 UTC"}
 {"locale": "pt-BR", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_319511774", "created": "2025-08-05 18:55:51 UTC"}
+{"locale": "de-DE", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_421553383", "created": "2025-08-06 02:37:43 UTC"}
+{"locale": "en-CA", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_386871833", "created": "2025-08-06 02:37:43 UTC"}
+{"locale": "en-GB", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_421553383", "created": "2025-08-06 02:37:43 UTC"}
+{"locale": "en-US", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_386871833", "created": "2025-08-06 02:37:44 UTC"}
+{"locale": "es-ES", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_421553383", "created": "2025-08-06 02:37:44 UTC"}
+{"locale": "fr-CA", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_386871833", "created": "2025-08-06 02:37:44 UTC"}
+{"locale": "fr-FR", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_421553383", "created": "2025-08-06 02:37:44 UTC"}
+{"locale": "it-IT", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_421553383", "created": "2025-08-06 02:37:44 UTC"}
+{"locale": "ja-JP", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_421553383", "created": "2025-08-06 02:37:44 UTC"}
+{"locale": "pt-BR", "date": "2025-07-30", "type": "ValueError", "message": "image_url 格式不正确：https://www.bing.com/th?id=OBGA.AdobeStock_386871833", "created": "2025-08-06 02:37:44 UTC"}
